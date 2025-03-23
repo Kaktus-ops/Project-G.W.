@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#home">ДОМ</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#about">ПРО CO2 СЛЕД</a>
+          </li>
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#how">КАК УМЕНЬШИТЬ CO2 СЛЕД</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="main__home home" id="home">
+        <h1 class="home__title">Глобальное потепление</h1>
+        <div class="about__info info-block">
+        <p class="home__subtitle">Глобальное потепление — это повышение средней температуры на Земле из-за увеличения количества парниковых газов в атмосфере, особенно CO₂ (углекислого газа).
+          <br>Если ничего не делать, климат изменится настолько, что жизнь на Земле станет сложнее: продукты питания подорожают, многие места станут непригодными для жизни, а природа сильно пострадает.
+          <br>Но! Мы можем замедлить этот процесс, если начнем заботиться об экологии уже сейчас! 💚</br>
+          <p>
+        </div>
+        <div class="home__image-container">
+          <img class="home__image" src="../static/img/global_warm.png" alt="Global warming">
+        </div>
+      </section>
+      <section class="main__about about" id="about">
+        <h2 class="about__title">Что такое CO₂ след?</h2>
+        <div class="about__info info-block">
+          <p class="info-block__text">
+            CO₂-след – это общее количество углекислого газа (CO₂), которое человек, компания или целая страна выбрасывает в атмосферу в результате своей деятельности. 
+            Проще говоря, это след, который мы оставляем, используя энергию, транспорт, продукты питания и товары.
+          </p>
+        </div>
+      </section>
+      <section class="main__how how" id="how">
+        <h2 class="how__title">Как уменьшить:</h2>
+        <p class="info-block__text">
+          <li>🚲 Используйте велосипед или ходите пешком.</li>
+          <li>🚌 Отдавайте предпочтение общественному транспорту.</li>
+          <li>💡 Экономьте электричество и воду.</li>
+          <li>🛒 Покупайте местные и переработанные товары.</li>
+          <li >🌿 Сажайте древья — они поглощают CO₂.</li>
+        </p>
+      </section>
+      <section class="main__feedback feedback" id="feedback">
+        <br><h2 class="feedback__title">Может есть вопросы?</h2></br>
+        <form action="feedback" method="POST" class="feedback__form form">
+          <label for="email">
+            <input type="email" class="form__input" name="email" id="email" placeholder="Enter your e-mail" required>
+          </label>
+          <label for="text">
+            <textarea name="text" class="form__input" id="text" cols="70" rows="10" required placeholder="Commentary"></textarea>
+          </label>
+          <button class="form__button" type="submit">SUBMIT</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
